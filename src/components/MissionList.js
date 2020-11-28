@@ -18,6 +18,7 @@ class MissionList extends React.Component {
     if (this.props.missionDetails.length < 1) {
       return <Loading />;
     }
+
     const renderList = this.props.missionDetails.map(missionDetails => {
       return (
         <div

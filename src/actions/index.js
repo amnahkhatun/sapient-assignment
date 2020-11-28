@@ -4,7 +4,6 @@ let response;
 
 export const fetchMissionDetails = pageNumber => async dispatch => {
   response = await products.get(`/v3/launches?limit=8`);
-  // (`/walmartproducts/${pageNumber}/8`);
   console.log(response.data, "sending from actions");
   dispatch({
     type: "FETCH_MISSION_DETAILS",
@@ -20,12 +19,12 @@ export const fetchProduct = () => async dispatch => {
   });
 };
 
-export const fetchFilteredProduct = query => async dispatch => {
-  // console.log(query, "response in actions -- fetchFilteredProduct");
+// export const fetchFilteredProduct = query => async dispatch => {
+//   // console.log(query, "response in actions -- fetchFilteredProduct");
 
-  dispatch({
-    type: "FETCH_FILTERED_PRODUCT",
-    query
-    // payload: response.data
-  });
-};
+//   dispatch({
+//     type: "FETCH_FILTERED_PRODUCT",
+//     query
+//     // payload: response.data
+//   });
+// };
