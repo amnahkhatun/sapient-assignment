@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow, mount, render } from "enzyme";
-import ProductCard from "./ProductCard";
+import MissionCard from "./MissionCard";
 import "../setupTest.js";
 
-describe("ProductCard", () => {
+describe("MissionCard", () => {
   it('should render correctly in "debug" mode', () => {
-    const component = shallow(<ProductCard />);
+    const component = shallow(<MissionCard />);
 
     expect(component).toMatchSnapshot();
   });
